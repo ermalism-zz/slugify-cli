@@ -1,7 +1,7 @@
 # Slugify CLI
 
 ```
-usage: slugify [-h] [--keep-letter-case]
+usage: slugify-cli [-h] [--keep-letter-case]
                   string_to_slugify [string_to_slugify ...]
 
 Slugify string CLI tool
