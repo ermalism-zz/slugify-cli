@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+import argparse
+import re
+import unicodedata
+
+parser = argparse.ArgumentParser(description='Slugify string CLI tool')
+parser.add_argument('string_to_slugify', nargs='+', help='string to slugify')
+parser.add_argument('--keep-letter-case', action='store_true', help='keep letter case as it is')
+args = parser.parse_args()
+string_to_slugify = ""
+
+separator = "-"
+if isinstance(args.string_to_slugify, list):
+    string_to_slugify = " ".join(args.string_to_slugify)
+else: 
+    string_to_slugify = args.string_to_slugify
+
+string_to_slugify = unicodedata.normalize("NFKD", string_to_slugify).encode("ascii", "ignore").decode("ascii")
+
+# remove symbols except spaces 
+string_to_slugify = re.sub('[^a-zA-Z.\\d\\s]', '', string_to_slugify)
+
+# reduce multiple spaces to one space and replace them with - 
+slugified_string = re.sub(" +", ' ', string_to_slugify).strip().replace(" ", "-")
+
+if args.keep_letter_case == False:
+    slugified_string = slugified_string.lower()
+
+print(slugified_string)
