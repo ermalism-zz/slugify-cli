@@ -1,5 +1,13 @@
 # Slugify CLI
 
+**Installation**
+
+```
+pip install slugify-cli
+```
+
+**Help Page** 
+
 ```
 usage: slugify-cli [-h] [--keep-letter-case]
                   string_to_slugify [string_to_slugify ...]
