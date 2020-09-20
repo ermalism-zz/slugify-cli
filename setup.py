@@ -9,5 +9,6 @@ setup(
     license='WTFPL',
     packages=['slugify'],
     scripts=['bin/slugify'],
+    python_requires='>3.5.2',
     zip_safe=False
 )
