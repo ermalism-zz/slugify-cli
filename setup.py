@@ -3,7 +3,7 @@ setup(
     name='slugify-cli',
     version='0.2',
     description='Slugify CLI Tool',
-    url='https://github.com/ermalism/slugify',
+    url='https://github.com/ermalism/slugify-cli',
     author='ermalism',
     author_email='ismajliermal@gmail.com',
     license='WTFPL',
