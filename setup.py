@@ -8,7 +8,7 @@ setup(
     author_email='ismajliermal@gmail.com',
     license='WTFPL',
     packages=['slugify-cli'],
-    scripts=['bin/slugify'],
+    scripts=['bin/slugify-cli'],
     python_requires='>3.5.2',
     zip_safe=False,
     download_url='https://github.com/ermalism/slugify-cli/archive/v0.1.tar.gz'
