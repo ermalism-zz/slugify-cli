@@ -11,5 +11,5 @@ setup(
     scripts=['bin/slugify'],
     python_requires='>3.5.2',
     zip_safe=False,
-    download_url='https://github.com/ermalism/slugify/archive/v0.1.tar.gz'
+    download_url='https://github.com/ermalism/slugify-cli/archive/v0.1.tar.gz'
 )
