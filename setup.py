@@ -7,7 +7,7 @@ setup(
     author='ermalism',
     author_email='ismajliermal@gmail.com',
     license='WTFPL',
-    packages=['slugify'],
+    packages=['slugify-cli'],
     scripts=['bin/slugify'],
     python_requires='>3.5.2',
     zip_safe=False,
