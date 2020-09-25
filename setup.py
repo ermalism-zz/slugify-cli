@@ -5,7 +5,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     readme_content = f.read()
 setup(
     name='slugify-cli',
-    version='0.3',
+    version='0.4',
     description='Slugify CLI Tool',
     long_description=readme_content,
     long_description_content_type='text/markdown',
@@ -17,5 +17,5 @@ setup(
     scripts=['bin/slugify-cli'],
     python_requires='>3.5.2',
     zip_safe=False,
-    download_url='https://github.com/ermalism/slugify-cli/archive/v0.3.tar.gz'
+    download_url='https://github.com/ermalism/slugify-cli/archive/v0.4.tar.gz'
 )

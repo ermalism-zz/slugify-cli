@@ -33,7 +33,7 @@ if args.decamelize:
 string_to_slugify = unicodedata.normalize("NFKD", string_to_slugify).encode("ascii", "ignore").decode("ascii")
 
 # remove symbols except spaces 
-string_to_slugify = re.sub('[^a-zA-Z.\\d\\s]', '', string_to_slugify)
+string_to_slugify = re.sub('[^a-zA-Z.\\d\\s]', ' ', string_to_slugify)
 
 # reduce multiple spaces to one space and replace them with - 
 slugified_string = re.sub(" +", ' ', string_to_slugify).strip().replace(" ", separator)

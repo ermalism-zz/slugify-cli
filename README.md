@@ -1,4 +1,4 @@
-# Slugify CLI
+# Slugify CLI 0.4
 
 **Installation**
 
